@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findings Archive | Ouki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .findings-page {
+            padding: 4rem 0;
+            background-color: var(--cream);
+        }
+        
+        .findings-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .findings-header h2 {
+            font-size: 2.5rem;
+            color: var(--deep-indigo);
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .findings-header p {
+            color: var(--warm-grey);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .filters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            background-color: var(--light-grey);
+            color: var(--warm-grey);
+            border: 2px solid transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--sage-green);
+            color: var(--cream);
+        }
+        
+        .findings-list {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .finding-item {
+            background-color: white;
+            border-left: 4px solid var(--sage-green);
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .finding-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .finding-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+        
+        .finding-expand {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--light-grey);
+            display: none;
+        }
+        
+        .finding-expand.show {
+            display: block;
+        }
+        
+        .expand-btn {
+            background-color: var(--sage-green);
+            color: var(--cream);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .expand-btn:hover {
+            background-color: var(--soft-teal);
+        }
+        
+        .section-title {
+            color: var(--deep-indigo);
+            font-weight: 400;
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        .mechanism-text {
+            color: var(--warm-grey);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Ouki</h1>
+                <span class="subtitle">大喜 · Great Joy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="findings.html" class="active">Findings</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="findings-page">
+        <div class="container">
+            <div class="findings-header">
+                <h2>Findings Archive</h2>
+                <p>19 potential breakthroughs identified through AI-powered literature analysis. All findings require validation by qualified researchers.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active">All Conditions</button>
+                <button class="filter-btn">Parkinson's</button>
+                <button class="filter-btn">Alzheimer's</button>
+                <button class="filter-btn">Common Cold</button>
+                <button class="filter-btn">Multiple Sclerosis</button>
+                <button class="filter-btn">HIV</button>
+                <button class="filter-btn">Diabetes</button>
+                <button class="filter-btn">Chronic Pain</button>
+                <button class="filter-btn">Influenza</button>
+                <button class="filter-btn">Herpes</button>
+            </div>
+
+            <div class="findings-list">
+                
+                <!-- Finding 1: Parkinson's -->
+                <div class="finding-item" data-condition="parkinsons">
+                    <div class="finding-header">
+                        <span class="condition-tag">Parkinson's Disease</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>Novel 3-Way Inflammatory Cycle Targeting</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Hydroxychloroquine + Suvorexant</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Proposes targeting the cGAS-STING-glymphatic-gut axis, a self-amplifying inflammatory triad where gut-derived signals and misfolded α-synuclein trigger cyclic inflammation. Combines STING pathway inhibition with enhanced glymphatic clearance during sleep.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">The cGAS-STING-glymphatic-gut triad represents a revolutionary model where: (1) gut inflammation sends systemic signals, (2) α-synuclein aggregates activate cGAS-STING pathways, (3) impaired glymphatic clearance allows accumulation of inflammatory mediators and protein aggregates, creating a self-perpetuating cycle of neurodegeneration.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While individual components (cGAS-STING in neurodegeneration, glymphatic dysfunction, gut-brain axis) have been studied separately, this specific three-way mechanistic connection has never been proposed. The drug combinations (hydroxychloroquine + suvorexant, metformin + rifaximin) have zero prior research in PD.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Phase I safety study of hydroxychloroquine + suvorexant combination in early PD patients (6-12 months), measuring CSF α-synuclein levels, peripheral STING signaling, and gut inflammatory markers. All drugs are FDA-approved with known safety profiles.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 9/10 | Impact: 7/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 2: Common Cold -->
+                <div class="finding-item" data-condition="common-cold">
+                    <div class="finding-header">
+                        <span class="condition-tag">Common Cold (Rhinovirus)</span>
+                        <span class="score">41/50</span>
+                    </div>
+                    <h4>Statin-Mediated Antiviral Pathway via 27-Hydroxycholesterol</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Statins (Atorvastatin, Simvastatin)</span>
+                        <span class="finding-date">April 10, 2026</span>
+                    </div>
+                    <p class="finding-summary">Novel connection between cholesterol-lowering drugs and rhinovirus treatment through 27-hydroxycholesterol (27OHC) pathway. Statins affect cholesterol metabolism, producing 27OHC which has documented antiviral properties against rhinovirus - yet no studies have connected these for cold treatment.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Statins reduce cholesterol biosynthesis, altering the production of oxysterols including 27-hydroxycholesterol. 27OHC has been shown to block rhinovirus replication through interference with viral entry and replication machinery. This creates a plausible biochemical pathway from widely-used cardiovascular drugs to common cold treatment.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">PubMed search reveals: (1) 27OHC blocks rhinovirus (documented), (2) statins affect 27OHC levels (documented), but (3) ZERO papers connect statins to rhinovirus treatment via this pathway. The connection exists in the literature but has never been explicitly made or tested.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Randomized controlled trial: statin users vs. non-users tracking cold frequency/duration. In vitro validation measuring rhinovirus inhibition at physiological 27OHC concentrations achieved by standard statin doses. Retrospective analysis of existing statin trial data for cold incidence.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 9/10 | Plausibility: 8/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 7/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 3: Multiple Sclerosis -->
+                <div class="finding-item" data-condition="multiple-sclerosis">
+                    <div class="finding-header">
+                        <span class="condition-tag">Multiple Sclerosis</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>Low-Intensity Focused Ultrasound for Remyelination</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">LIFU Neuromodulation</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Non-invasive therapeutic ultrasound demonstrates ability to actively promote remyelination in MS lesions through neuromodulation, offering potential disease-modifying treatment beyond symptom management.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Low-intensity focused ultrasound (LIFU) provides precise neuromodulation that can stimulate oligodendrocyte precursor cells and promote myelin repair in MS-damaged neural tissue. Unlike current treatments that primarily manage inflammation, LIFU directly addresses the underlying demyelination.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While LIFU is being explored for various neurological applications, its specific use for MS remyelination represents an emerging application. The technique is non-invasive, precisely targetable, and addresses root cause rather than just symptoms.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Small pilot study (20-30 patients) with MRI-guided LIFU treatment targeting specific MS lesions, measuring remyelination via specialized MRI sequences over 6-12 months. Technology is FDA-approved for other applications, reducing regulatory barriers.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 7/10 | Plausibility: 8/10 | Actionability: 8/10 | Impact: 8/10 | Evidence: 7/10</p>
+                    </div>
+                </div>
+
+                <!-- Placeholder for remaining 16 findings -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Additional Findings</span>
+                        <span class="score">—</span>
+                    </div>
+                    <h4>16 Additional Breakthroughs</h4>
+                    <p class="finding-summary" style="font-style: italic;">Full archive of all 19 findings will be published upon launch. Each finding includes detailed mechanism analysis, novelty assessment, actionability scores, and validation requirements.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ouki Research Platform. All findings require external validation.</p>
+            <p class="footer-note">Ouki (大喜) - "Great Joy" in Japanese</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleExpand(btn) {
+            const expandSection = btn.nextElementSibling;
+            expandSection.classList.toggle('show');
+            btn.textContent = expandSection.classList.contains('show') 
+                ? '← Collapse' 
+                : 'Read Full Analysis →';
+        }
+    </script>
+</body>
+</html>

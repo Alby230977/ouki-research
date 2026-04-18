@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Ouki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page {
+            padding: 4rem 0;
+            background-color: var(--cream);
+        }
+        
+        .about-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .about-header h2 {
+            font-size: 2.5rem;
+            color: var(--deep-indigo);
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-left: 4px solid var(--sage-green);
+        }
+        
+        .about-section h3 {
+            color: var(--deep-indigo);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .about-section p {
+            color: var(--warm-grey);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .about-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-section li {
+            color: var(--warm-grey);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .methodology-box {
+            background-color: var(--light-grey);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        
+        .methodology-box h4 {
+            color: var(--deep-indigo);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .condition-item {
+            color: var(--warm-grey);
+            padding: 0.5rem;
+        }
+        
+        .disclaimer-strong {
+            background-color: #FFF9E6;
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .disclaimer-strong h4 {
+            color: var(--accent-red);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Ouki</h1>
+                <span class="subtitle">大喜 · Great Joy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="findings.html">Findings</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-page">
+        <div class="container">
+            <div class="about-header">
+                <h2>About Ouki</h2>
+                <p style="color: var(--warm-grey); max-width: 700px; margin: 0 auto;">A research acceleration platform for identifying overlooked drug repurposing opportunities</p>
+            </div>
+
+            <div class="about-content">
+                
+                <div class="about-section">
+                    <h3>What is Ouki?</h3>
+                    <p>Ouki is a research acceleration platform designed to help medical researchers identify potential drug repurposing opportunities that may have been overlooked in existing literature.</p>
+                    
+                    <p><strong>The challenge:</strong> Over 4,000 new medical research papers are published daily. Researchers working on specific conditions often cannot review findings from other disease areas that might hold relevant insights. Valuable connections between existing drugs and new treatment applications can remain hidden in siloed research.</p>
+                    
+                    <p><strong>Our approach:</strong> Ouki uses AI to analyze recent medical literature across multiple disease conditions, identifying novel connections between FDA-approved drugs and treatment opportunities. By examining research at scale and across disciplinary boundaries, Ouki flags patterns that warrant further investigation by qualified researchers.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>How Ouki Works</h3>
+                    
+                    <div class="methodology-box">
+                        <h4>1. Literature Analysis</h4>
+                        <p>AI regularly analyzes recent medical research across 10 major disease conditions, focusing on peer-reviewed publications and clinical findings.</p>
+                    </div>
+                    
+                    <div class="methodology-box">
+                        <h4>2. Pattern Recognition</h4>
+                        <p>Advanced algorithms identify connections between FDA-approved drugs and disease mechanisms that may not have been explicitly explored in existing literature.</p>
+                    </div>
+                    
+                    <div class="methodology-box">
+                        <h4>3. Multi-Factor Evaluation</h4>
+                        <p>Potential findings are scored across five dimensions:</p>
+                        <ul>
+                            <li><strong>Novelty:</strong> Has this connection been explored before?</li>
+                            <li><strong>Plausibility:</strong> Is the proposed mechanism biochemically sound?</li>
+                            <li><strong>Actionability:</strong> Can this be tested with existing tools?</li>
+                            <li><strong>Impact:</strong> What is the potential clinical significance?</li>
+                            <li><strong>Evidence:</strong> How strong is the supporting data?</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="methodology-box">
+                        <h4>4. Publication & Validation</h4>
+                        <p>High-scoring hypotheses (typically 35+/50) are published for review by the research community. All findings require external validation through proper scientific investigation.</p>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h3>Current Coverage</h3>
+                    <p>Ouki currently monitors 10 major disease conditions:</p>
+                    
+                    <div class="conditions-grid">
+                        <div class="condition-item">• Parkinson's Disease</div>
+                        <div class="condition-item">• Alzheimer's Disease</div>
+                        <div class="condition-item">• Multiple Sclerosis</div>
+                        <div class="condition-item">• HIV/AIDS</div>
+                        <div class="condition-item">• Diabetes</div>
+                        <div class="condition-item">• Chronic Pain</div>
+                        <div class="condition-item">• Common Cold (Rhinovirus)</div>
+                        <div class="condition-item">• Influenza</div>
+                        <div class="condition-item">• Herpes Simplex Virus</div>
+                        <div class="condition-item">• Cancer</div>
+                    </div>
+                    
+                    <p style="margin-top: 1.5rem; font-style: italic;">Coverage expansion is planned based on researcher demand and community feedback.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>Why Drug Repurposing?</h3>
+                    <p>Drug repurposing—finding new uses for existing FDA-approved medications—offers several advantages over developing new drugs from scratch:</p>
+                    
+                    <ul>
+                        <li><strong>Known safety profiles:</strong> Drugs have already passed extensive safety testing</li>
+                        <li><strong>Faster clinical trials:</strong> Can skip early-phase safety studies</li>
+                        <li><strong>Lower development costs:</strong> Significantly cheaper than novel drug development</li>
+                        <li><strong>Immediate availability:</strong> Drugs are already manufactured and distributed</li>
+                        <li><strong>Reduced risk:</strong> Pharmacokinetics and side effects are well-documented</li>
+                    </ul>
+                    
+                    <p>By focusing exclusively on FDA-approved drugs, Ouki ensures all findings are immediately actionable through clinical investigation.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>Limitations & Transparency</h3>
+                    <p>Ouki is a computational hypothesis generation tool with important limitations:</p>
+                    
+                    <ul>
+                        <li><strong>AI-generated hypotheses:</strong> Findings are produced by artificial intelligence analyzing literature patterns, not human medical experts</li>
+                        <li><strong>Requires validation:</strong> All hypotheses must be validated through proper scientific investigation before clinical consideration</li>
+                        <li><strong>Not comprehensive:</strong> Analysis covers recent literature but cannot capture all relevant research</li>
+                        <li><strong>Possibility of errors:</strong> AI systems can identify spurious correlations or miss important context</li>
+                        <li><strong>Research tool only:</strong> Not a substitute for expert medical judgment or systematic literature review</li>
+                    </ul>
+                    
+                    <p style="margin-top: 1.5rem;">Ouki is designed to accelerate research by flagging potentially interesting connections for human experts to investigate—not to replace the rigorous scientific process.</p>
+                </div>
+
+                <div class="disclaimer-strong">
+                    <h4>⚠️ Critical Disclaimer</h4>
+                    <p><strong>Ouki generates research hypotheses, not medical advice.</strong></p>
+                    <p>All findings published on this platform are computational predictions that require validation by qualified medical researchers through proper clinical studies. Nothing on this site should be interpreted as medical advice, treatment recommendations, or established scientific fact.</p>
+                    <p style="margin-top: 1rem;">This platform is designed as a research acceleration tool for the scientific community. If you are a patient or caregiver, please consult qualified healthcare professionals for medical guidance.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>Origin & Development</h3>
+                    <p>Ouki was developed by a software engineer with expertise in AI systems and automation, not a medical researcher. The name "Ouki" (大喜) means "great joy" in Japanese, reflecting the hope that this tool might help accelerate discoveries that bring relief to those suffering from disease.</p>
+                    
+                    <p>The platform represents an experiment in using AI to identify patterns across research silos that human researchers, constrained by time and specialization, might overlook. It is offered freely to the research community in the spirit of open scientific collaboration.</p>
+                    
+                    <p style="margin-top: 1.5rem;">For questions, collaboration inquiries, or to report issues, please contact:</p>
+                    <p style="margin-top: 0.5rem;"><strong>Email:</strong> <a href="mailto:ouki.research@proton.me" style="color: var(--soft-teal); text-decoration: none;">ouki.research@proton.me</a></p>
+                    <p style="margin-top: 1rem; font-style: italic; font-size: 0.95rem;">Development is ongoing and community feedback is welcomed.</p>
+                </div>
