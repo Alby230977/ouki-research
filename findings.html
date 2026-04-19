@@ -144,26 +144,43 @@
         <div class="container">
             <div class="findings-header">
                 <h2>Findings Archive</h2>
-                <p>19 potential breakthroughs identified through AI-powered literature analysis. All findings require validation by qualified researchers.</p>
-            </div>
-
-            <div class="filters">
-                <button class="filter-btn active">All Conditions</button>
-                <button class="filter-btn">Parkinson's</button>
-                <button class="filter-btn">Alzheimer's</button>
-                <button class="filter-btn">Common Cold</button>
-                <button class="filter-btn">Multiple Sclerosis</button>
-                <button class="filter-btn">HIV</button>
-                <button class="filter-btn">Diabetes</button>
-                <button class="filter-btn">Chronic Pain</button>
-                <button class="filter-btn">Influenza</button>
-                <button class="filter-btn">Herpes</button>
+                <p>19 potential breakthroughs identified through AI-powered literature analysis. All findings require validation by qualified researchers. Showcasing top-scoring findings (38-41/50).</p>
             </div>
 
             <div class="findings-list">
                 
-                <!-- Finding 1: Parkinson's -->
-                <div class="finding-item" data-condition="parkinsons">
+                <!-- Finding 1: Rhinovirus/Statins - HIGHEST SCORE -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Common Cold (Rhinovirus)</span>
+                        <span class="score">41/50</span>
+                    </div>
+                    <h4>Statin-Mediated Antiviral Pathway via 27-Hydroxycholesterol</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Statins (Atorvastatin, Simvastatin)</span>
+                        <span class="finding-date">April 10, 2026</span>
+                    </div>
+                    <p class="finding-summary">Novel connection between cholesterol-lowering drugs and rhinovirus treatment through 27-hydroxycholesterol (27OHC) pathway. Statins affect cholesterol metabolism, producing 27OHC which has documented antiviral properties against rhinovirus—yet no studies have connected these for cold treatment.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Statins reduce cholesterol biosynthesis, altering the production of oxysterols including 27-hydroxycholesterol. 27OHC has been shown to block rhinovirus replication through interference with viral entry and replication machinery. This creates a plausible biochemical pathway from widely-used cardiovascular drugs to common cold treatment.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">PubMed search reveals: (1) 27OHC blocks rhinovirus (documented), (2) statins affect 27OHC levels (documented), but (3) ZERO papers connect statins to rhinovirus treatment via this pathway. The connection exists in the literature but has never been explicitly made or tested.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Randomized controlled trial: statin users vs. non-users tracking cold frequency/duration. In vitro validation measuring rhinovirus inhibition at physiological 27OHC concentrations achieved by standard statin doses. Retrospective analysis of existing statin trial data for cold incidence.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 9/10 | Plausibility: 8/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 7/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 2: Parkinson's Week 2 -->
+                <div class="finding-item">
                     <div class="finding-header">
                         <span class="condition-tag">Parkinson's Disease</span>
                         <span class="score">39/50</span>
@@ -192,38 +209,68 @@
                     </div>
                 </div>
 
-                <!-- Finding 2: Common Cold -->
-                <div class="finding-item" data-condition="common-cold">
+                <!-- Finding 3: Alzheimer's -->
+                <div class="finding-item">
                     <div class="finding-header">
-                        <span class="condition-tag">Common Cold (Rhinovirus)</span>
-                        <span class="score">41/50</span>
+                        <span class="condition-tag">Alzheimer's Disease</span>
+                        <span class="score">39/50</span>
                     </div>
-                    <h4>Statin-Mediated Antiviral Pathway via 27-Hydroxycholesterol</h4>
+                    <h4>ACSL4-Megalin Axis: Ferroptosis-Receptor Dysfunction Link</h4>
                     <div class="finding-meta">
-                        <span class="finding-drugs">Statins (Atorvastatin, Simvastatin)</span>
+                        <span class="finding-drugs">Iron Chelators (Deferasirox) + Megalin Modulators</span>
                         <span class="finding-date">April 10, 2026</span>
                     </div>
-                    <p class="finding-summary">Novel connection between cholesterol-lowering drugs and rhinovirus treatment through 27-hydroxycholesterol (27OHC) pathway. Statins affect cholesterol metabolism, producing 27OHC which has documented antiviral properties against rhinovirus - yet no studies have connected these for cold treatment.</p>
+                    <p class="finding-summary">First demonstration of connection between iron-dependent cell death (ferroptosis) and receptor-mediated amyloid clearance. ACSL4-driven lipid peroxidation damages Megalin receptors, impairing ApoE clearance and creating a vicious cycle of amyloid accumulation.</p>
                     
                     <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
                     
                     <div class="finding-expand">
                         <h5 class="section-title">Novel Mechanism</h5>
-                        <p class="mechanism-text">Statins reduce cholesterol biosynthesis, altering the production of oxysterols including 27-hydroxycholesterol. 27OHC has been shown to block rhinovirus replication through interference with viral entry and replication machinery. This creates a plausible biochemical pathway from widely-used cardiovascular drugs to common cold treatment.</p>
+                        <p class="mechanism-text">ACSL4 activation leads to lipid peroxidation and membrane damage, which impairs Megalin receptor function. This reduces ApoE-mediated amyloid clearance, creating accumulation. The specific amino acid binding sites for Megalin-ApoE interactions are newly identified and could be pharmacologically targeted.</p>
                         
                         <h5 class="section-title">Why Novel</h5>
-                        <p class="mechanism-text">PubMed search reveals: (1) 27OHC blocks rhinovirus (documented), (2) statins affect 27OHC levels (documented), but (3) ZERO papers connect statins to rhinovirus treatment via this pathway. The connection exists in the literature but has never been explicitly made or tested.</p>
+                        <p class="mechanism-text">While ferroptosis and Megalin dysfunction have been studied separately in AD, no research connects ACSL4-mediated ferroptosis to receptor-mediated clearance mechanisms. The specific pathway: ACSL4 → lipid peroxidation → membrane damage → impaired Megalin → reduced ApoE clearance → amyloid accumulation has never been proposed.</p>
                         
                         <h5 class="section-title">Actionable Next Steps</h5>
-                        <p class="mechanism-text">Randomized controlled trial: statin users vs. non-users tracking cold frequency/duration. In vitro validation measuring rhinovirus inhibition at physiological 27OHC concentrations achieved by standard statin doses. Retrospective analysis of existing statin trial data for cold incidence.</p>
+                        <p class="mechanism-text">Test deferasirox (FDA-approved iron chelator) in presymptomatic AD patients identified by plasma biomarkers. Measure both ferroptosis markers (4-HNE, GPX4) and amyloid clearance (CSF levels, PET imaging). Cell culture validation of ACSL4 inhibition effects on Megalin receptor function.</p>
                         
                         <h5 class="section-title">Evaluation Scores</h5>
-                        <p class="mechanism-text">Novelty: 9/10 | Plausibility: 8/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 7/10</p>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 9/10 | Evidence: 6/10</p>
                     </div>
                 </div>
 
-                <!-- Finding 3: Multiple Sclerosis -->
-                <div class="finding-item" data-condition="multiple-sclerosis">
+                <!-- Finding 4: Rhinovirus Week 2 -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Common Cold (Rhinovirus)</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>Microbiome-Guided Statin + OM-85 Combination Therapy</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Atorvastatin + Intranasal OM-85</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Combines host-targeting antiviral approach (27OHC via statins) with localized immune training (intranasal bacterial lysate), stratified by nasal microbiome risk profiles. Represents convergence of novel mechanism, solved technical barrier (RV-C production), and immediately actionable repurposing.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Dual-pathway targeting: atorvastatin modulates cholesterol metabolism to increase 27-hydroxycholesterol (direct antiviral), while intranasal OM-85 bacterial lysate primes local nasal immunity. Microbiome signatures predict treatment response, allowing personalized prophylaxis for high-risk individuals.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">Zero research exists combining 27OHC pathway modulation with bacterial lysate immune training. Microbiome-guided dosing for antivirals is completely unexplored. Intranasal delivery of OM-85 (rather than oral) for respiratory protection represents route-specific breakthrough.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Screen children for nasal microbiome risk profiles, randomize high-risk individuals to atorvastatin + intranasal OM-85 vs. placebo. Follow for full cold season measuring laboratory-confirmed rhinovirus infections. Measure 27OHC levels and immune markers to validate mechanism.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 9/10 | Impact: 7/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 5: Multiple Sclerosis -->
+                <div class="finding-item">
                     <div class="finding-header">
                         <span class="condition-tag">Multiple Sclerosis</span>
                         <span class="score">38/50</span>
@@ -252,14 +299,104 @@
                     </div>
                 </div>
 
-                <!-- Placeholder for remaining 16 findings -->
+                <!-- Finding 6: Chronic Pain -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Chronic Pain</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>Sodium Channel Modulation Across Pain Syndromes</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Ranolazine (Nav1.7 Inhibition)</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Identifies sodium channel dysfunction as common pathway across multiple chronic pain conditions. Proposes repurposing ranolazine (FDA-approved for angina) to target neuropathic pain, COPD-related musculoskeletal pain, and post-seizure chronic pain through Nav1.7/1.8 channel blockade.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Ranolazine's late sodium channel (Nav1.5) inhibition for cardiac use extends to neuronal Nav1.7/1.8 channels involved in pain signal transmission. Cross-condition analysis reveals sodium channel hyperexcitability as unifying mechanism in epilepsy-related injuries, chronic low back pain, and COPD musculoskeletal pain.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While ranolazine is established for cardiac use, zero research exists on its application to neuropathic pain despite shared sodium channel mechanisms. The seizure-injury-pain cascade via HMGB1/TLR4 pathway is newly identified. Cross-condition sodium channel insight represents novel therapeutic synthesis.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Phase II trial of ranolazine 1000mg BID in post-seizure neuropathic pain patients, measuring Neuropathic Pain Symptom Inventory scores at 8 weeks. Combination study of ranolazine + water-based rehabilitation in COPD patients with chronic pain, measuring 6-minute walk test distance and VAS pain scores.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 7/10 | Plausibility: 9/10 | Actionability: 8/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 7: Diabetes -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Diabetes</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>SGLT2i + Faster Insulin Aspart Pediatric Combination</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Empagliflozin + Faster Insulin Aspart</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">First proposal to combine SGLT2 inhibitor's glucosuria effect with faster insulin's rapid post-prandial correction in pediatric Type 1 diabetes. Exploits complementary glucose-lowering mechanisms with different temporal profiles to prevent cardiovascular-kidney-metabolic syndrome in youth.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">SGLT2 inhibitors provide continuous glucose reduction through urinary excretion while faster insulin aspart targets post-prandial spikes with accelerated pharmacokinetics. The aldosterone-SGLT2i synergy for diabetic aldosteronism represents additional unexplored therapeutic angle through dual metabolic-hormonal targeting.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">Zero studies exist combining empagliflozin/dapagliflozin with faster insulin aspart in pediatric populations. The specific application to preventing cardiovascular-kidney-metabolic syndrome in youth represents paradigm shift from reactive to preventive pediatric diabetes management. Aldosterone-glucose crosstalk newly identified.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Safety run-in study: 20 adolescents aged 16-17 with T1D receiving empagliflozin + faster insulin aspart for 12 weeks. Monitor HbA1c, time-in-range via CGM, dawn phenomenon reduction, and safety markers. If validated, expand to larger pediatric efficacy trial with cardiovascular-kidney endpoints.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 8: HIV -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">HIV/AIDS</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>GDF-15/Mitochondrial Stress Axis in HIV Reservoir Maintenance</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Metformin + GDF-15 Antagonists</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">First demonstration that mitochondrial stress biomarker GDF-15 correlates with HIV reservoir persistence independent of inflammation. Proposes targeting cellular metabolism through mitochondrial modulation as novel HIV cure strategy beyond traditional antivirals and immune activation.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">GDF-15 (Growth Differentiation Factor-15) is released during mitochondrial stress and correlates with HIV reservoir markers independently of traditional inflammation pathways. This reveals reservoir cells exist in metabolically distinct states maintained by mitochondrial dysfunction rather than just immune activation, opening entirely new therapeutic avenue.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While GDF-15 is known in aging research and mitochondrial dysfunction recognized in HIV, linking them as an independent reservoir maintenance mechanism separate from inflammation is genuinely new. No research exists on GDF-15 antagonists for HIV reservoir reduction or combining metformin's mitochondrial effects with ART for this purpose.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Pilot study: HIV patients on stable ART receive metformin, measure GDF-15 levels and HIV reservoir markers before/after treatment. Humanized mouse studies testing GDF-15 neutralizing antibodies on reservoir burden. Validate GDF-15/reservoir correlation in independent patient cohorts.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Placeholder for remaining findings -->
                 <div class="finding-item">
                     <div class="finding-header">
                         <span class="condition-tag">Additional Findings</span>
                         <span class="score">—</span>
                     </div>
-                    <h4>16 Additional Breakthroughs</h4>
-                    <p class="finding-summary" style="font-style: italic;">Full archive of all 19 findings will be published upon launch. Each finding includes detailed mechanism analysis, novelty assessment, actionability scores, and validation requirements.</p>
+                    <h4>11 Additional Breakthroughs</h4>
+                    <p class="finding-summary" style="font-style: italic;">Additional findings spanning Herpes Simplex, Influenza, and other conditions available in full archive. Each includes detailed mechanism analysis, novelty assessment, actionability scores, and validation requirements. New breakthroughs added weekly as system continues analysis.</p>
                 </div>
 
             </div>
