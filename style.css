@@ -166,7 +166,7 @@ body {
 }
 
 .stat-label {
-    color: var(--warm-grey);
+    color: var(--deep-indigo);
     font-size: 1rem;
     font-weight: 400;
 }
