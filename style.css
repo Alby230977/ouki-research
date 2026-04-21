@@ -1,8 +1,8 @@
-/* Import Inter font */
+/* Import Inter font (Claude.ai font) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Original color palette */
+    /* Original Japanese color palette */
     --sage-green: #8B9D83;
     --deep-indigo: #2C3E50;
     --soft-teal: #5F9EA0;
@@ -52,7 +52,7 @@ body {
 
 .nav-brand h1 {
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--cream);
 }
 
@@ -90,7 +90,7 @@ body {
 
 .hero h2 {
     font-size: 2.5rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1rem;
     letter-spacing: -0.5px;
 }
@@ -179,7 +179,7 @@ body {
 
 .how-it-works h3 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--deep-indigo);
@@ -238,7 +238,7 @@ body {
 
 .recent-findings h3 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--deep-indigo);
@@ -316,7 +316,7 @@ body {
     text-align: center;
 }
 
-/* Disclaimer Section */
+/* Disclaimer Section - KEEP LEFT BORDER */
 .disclaimer-section {
     padding: 3rem 0;
     background-color: var(--cream);
@@ -324,7 +324,7 @@ body {
 
 .disclaimer-box {
     background-color: #FFF9E6;
-    
+    border-left: 4px solid var(--accent-red);
     padding: 2rem;
     border-radius: 4px;
     max-width: 900px;
@@ -374,7 +374,7 @@ footer p {
 .about-header h2 {
     font-size: 2.5rem;
     color: var(--deep-indigo);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1rem;
 }
 
@@ -442,7 +442,7 @@ footer p {
 
 .disclaimer-strong {
     background-color: #FFF9E6;
-   
+    border-left: 4px solid var(--accent-red);
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 4px;
@@ -468,7 +468,7 @@ footer p {
 .findings-header h2 {
     font-size: 2.5rem;
     color: var(--deep-indigo);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1rem;
 }
 
@@ -585,3 +585,4 @@ footer p {
         gap: 1rem;
     }
 }
+
