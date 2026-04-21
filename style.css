@@ -316,7 +316,7 @@ body {
     text-align: center;
 }
 
-/* Disclaimer Section - KEEP LEFT BORDER */
+/* Disclaimer Section - ONLY BORDER LEFT */
 .disclaimer-section {
     padding: 3rem 0;
     background-color: var(--cream);
@@ -360,7 +360,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* About Page - NO LEFT BORDERS */
+/* About Page */
 .about-page {
     padding: 4rem 0;
     background-color: var(--cream);
@@ -585,4 +585,3 @@ footer p {
         gap: 1rem;
     }
 }
-
