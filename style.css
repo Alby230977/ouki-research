@@ -159,7 +159,7 @@ body {
 }
 
 .stat-number {
-    font-size: 1.5rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: var(--deep-indigo);
     margin-bottom: 0.5rem;
