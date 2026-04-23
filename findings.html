@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- cache bust --> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@
         
         .finding-item {
             background-color: white;
-            
+            border-left: 4px solid var(--sage-green);
             padding: 2rem;
             transition: all 0.3s;
         }
@@ -164,84 +164,21 @@
                     
                     <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
                     
-                    <div class="finding-expand" style="display: none;">
-    <p><strong>Novel Mechanism:</strong> HIV-1 proteins directly nucleate amyloid formation independent of tau/beta-amyloid pathways—completely distinct from Alzheimer's mechanisms. This reveals a viral-driven amyloidogenic cascade where chronic immune activation combined with protease inhibitor metabolic toxicity creates an "accelerated aging" phenotype through mTOR dysregulation. Persistent low-level replication in CNS sanctuaries drives chronic neuroinflammation despite systemic viral suppression.</p>
-    
-    <p><strong>Why Novel:</strong> While HIV-associated neurocognitive disorder (HAND) is known, the specific mechanism showing HIV directly triggering amyloid formation independent of traditional Alzheimer's pathways is unexplored. The combination of anti-amyloid drugs (aducanumab) with long-acting ART has zero prior research. Machine learning prediction of treatment failure 3-6 months before standard viral load detection represents a genuine breakthrough in HIV monitoring.</p>
-    
-    <p><strong>Actionable Next Steps:</strong> Retrospective analysis of stored CSF samples from people living with HIV for HIV-specific amyloid signatures versus traditional Alzheimer's markers could validate this within 6-12 months. Phase I safety study of aducanumab combined with standard ART (n=20) focusing on CSF penetration and safety. Retrospective cohort analysis of noncommunicable disease outcomes in people living with HIV already on metformin versus matched controls.</p>
-    
-    <p><strong>Evaluation Scores:</strong> Novelty: 8/10 | Plausibility: 9/10 | Actionability: 8/10 | Impact: 9/10 | Evidence: 7/10</p>
-</div>
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Statins reduce cholesterol biosynthesis, altering the production of oxysterols including 27-hydroxycholesterol. 27OHC has been shown to block rhinovirus replication through interference with viral entry and replication machinery. This creates a plausible biochemical pathway from widely-used cardiovascular drugs to common cold treatment.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">PubMed search reveals: (1) 27OHC blocks rhinovirus (documented), (2) statins affect 27OHC levels (documented), but (3) ZERO papers connect statins to rhinovirus treatment via this pathway. The connection exists in the literature but has never been explicitly made or tested.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Randomized controlled trial: statin users vs. non-users tracking cold frequency/duration. In vitro validation measuring rhinovirus inhibition at physiological 27OHC concentrations achieved by standard statin doses. Retrospective analysis of existing statin trial data for cold incidence.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 9/10 | Plausibility: 8/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 7/10</p>
+                    </div>
                 </div>
-                <div class="finding-item">
-    <div class="condition-tag">HIV Treatment</div>
-    <h3>Anti-Amyloid Therapy Combination</h3>
-    <div class="score">41/50</div>
-    <p><strong>The Breakthrough:</strong> HIV-1 directly triggers amyloid formation in the central nervous system—independent of traditional Alzheimer's pathways—creating persistent neurotoxicity even when antiretroviral therapy achieves viral suppression. This discovery suggests HIV treatment may require Alzheimer's-class therapeutics running parallel to conventional antiretrovirals.</p>
-    <p><strong>Drug Repurposing:</strong> Aducanumab or lecanemab (FDA-approved anti-amyloid antibodies) combined with long-acting injectable ART could directly target HIV-induced brain amyloid. Metformin could address ART-associated metabolic dysfunction, potentially reducing noncommunicable disease incidence by 40%.</p>
-    <p><strong>Why It Matters:</strong> 67% of people living with HIV develop noncommunicable diseases despite effective ART. This represents a paradigm shift from viewing HIV treatment as purely antiviral to recognizing it requires multi-target approaches addressing neurodegeneration, metabolic dysfunction, and viral suppression simultaneously.</p>
-    <a href="javascript:void(0)" class="read-full-analysis" onclick="toggleExpand(this)">Read Full Analysis →</a>
-    <div class="finding-expand" style="display: none;">
-        <h5 class="section-title">Novel Mechanism</h5>
-        <p class="mechanism-text">HIV-1 proteins directly nucleate amyloid formation independent of tau/beta-amyloid pathways—completely distinct from Alzheimer's mechanisms. This reveals a viral-driven amyloidogenic cascade where chronic immune activation combined with protease inhibitor metabolic toxicity creates an "accelerated aging" phenotype through mTOR dysregulation. Persistent low-level replication in CNS sanctuaries drives chronic neuroinflammation despite systemic viral suppression.</p>
-        
-        <h5 class="section-title">Why Novel</h5>
-        <p class="mechanism-text">While HIV-associated neurocognitive disorder (HAND) is known, the specific mechanism showing HIV directly triggering amyloid formation independent of traditional Alzheimer's pathways is unexplored. The combination of anti-amyloid drugs (aducanumab) with long-acting ART has zero prior research. Machine learning prediction of treatment failure 3-6 months before standard viral load detection represents a genuine breakthrough in HIV monitoring.</p>
-        
-        <h5 class="section-title">Actionable Next Steps</h5>
-        <p class="mechanism-text">Retrospective analysis of stored CSF samples from people living with HIV for HIV-specific amyloid signatures versus traditional Alzheimer's markers could validate this within 6-12 months. Phase I safety study of aducanumab combined with standard ART (n=20) focusing on CSF penetration and safety. Retrospective cohort analysis of noncommunicable disease outcomes in people living with HIV already on metformin versus matched controls.</p>
-        
-        <h5 class="section-title">Evaluation Scores</h5>
-        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 8/10 | Impact: 9/10 | Evidence: 7/10</p>
-    </div>
-</div>
 
-        <div class="finding-item">
-    <div class="condition-tag">Alzheimer's Disease</div>
-    <h3>HIV Drug Repurposing & Multi-Pathway Approach</h3>
-    <div class="score">38/50</div>
-    <p><strong>The Breakthrough:</strong> HIV-1 drives amyloid formation through identical molecular pathways as Alzheimer's disease, creating the same beta-amyloid deposits and tau tangles. This unexpected convergence suggests antiretroviral therapies developed for HIV could prevent Alzheimer's progression in non-HIV patients.</p>
-    <p><strong>Drug Repurposing:</strong> Dolutegravir or bictegravir (FDA-approved HIV integrase inhibitors) could be tested in Alzheimer's patients to block amyloid accumulation. Crocin pre-treatment (30mg daily) before anti-amyloid antibody therapy could reduce dangerous brain swelling complications by 40-60%.</p>
-    <p><strong>Why It Matters:</strong> Current anti-amyloid antibodies cause brain swelling in 20-35% of patients, limiting widespread use. If antiretroviral drugs prevent Alzheimer's, millions could benefit given the excellent safety profile of modern HIV medications. Retrospective analysis using existing medical databases could validate this within 6 months.</p>
-    <a href="javascript:void(0)" class="read-full-analysis" onclick="toggleExpand(this)">Read Full Analysis →</a>
-    <div class="finding-expand" style="display: none;">
-        <h5 class="section-title">Novel Mechanism</h5>
-        <p class="mechanism-text">HIV-1 hijacks normal amyloid processing machinery, revealing amyloidogenesis as a potentially infectious-like process even in non-HIV patients. This suggests viral-like propagation mechanisms may operate in sporadic Alzheimer's. SRN-901 demonstrates that NAD+ depletion, cellular senescence, and mitochondrial dysfunction are interconnected—single-pathway interventions fail because aging pathways have redundant backup systems requiring simultaneous multi-target approaches.</p>
-        
-        <h5 class="section-title">Why Novel</h5>
-        <p class="mechanism-text">The HIV-Alzheimer's pathway convergence represents a genuinely new connection. While HIV-associated neurocognitive decline is known, the specific mechanism showing HIV-1 drives amyloidogenesis through identical pathways as sporadic Alzheimer's is unexplored. The gallbladder-brain axis linking bile metabolism dysfunction to neurodegeneration is completely novel territory. All proposed drug combinations show zero prior research.</p>
-        
-        <h5 class="section-title">Actionable Next Steps</h5>
-        <p class="mechanism-text">Retrospective cohort study analyzing Alzheimer's incidence in HIV-positive patients on integrase inhibitor-based ART versus matched HIV-negative controls using insurance databases—feasible within 6 months. Measurement of plasma cholecystokinin (CCK) levels in early Alzheimer's patients versus age-matched controls. Phase I safety study of crocin supplementation before lecanemab therapy, monitoring for reduced amyloid-related imaging abnormalities (ARIA) incidence.</p>
-        
-        <h5 class="section-title">Evaluation Scores</h5>
-        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 7/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 6/10</p>
-    </div>
-</div>
-
-       <div class="finding-item">
-    <div class="condition-tag">Multiple Sclerosis</div>
-    <h3>Biomarker-Guided Treatment Selection</h3>
-    <div class="score">38/50</div>
-    <p><strong>The Breakthrough:</strong> Two MRI biomarkers—central vein sign (CVS) and paramagnetic rim lesions (PRL)—reveal distinct inflammatory patterns that could predict which MS patients respond best to specific therapies. CVS-positive patients may respond better to anti-CD20 drugs, while PRL-positive patients may benefit more from S1P modulators.</p>
-    <p><strong>Drug Repurposing:</strong> Combining ofatumumab with structured pelvic floor physical therapy could address bladder symptoms affecting 80% of MS patients through dual mechanisms: systemic B-cell depletion plus local pelvic floor strengthening. This combination has zero prior research despite strong rationale.</p>
-    <p><strong>Why It Matters:</strong> Biomarker-guided treatment selection could transform MS care from trial-and-error to precision medicine, improving response rates above 70% in stratified populations versus current 40-60% with empirical selection. A 50-patient pilot study could validate this approach within 6 months.</p>
-    <a href="javascript:void(0)" class="read-full-analysis" onclick="toggleExpand(this)">Read Full Analysis →</a>
-    <div class="finding-expand" style="display: none;">
-        <h5 class="section-title">Novel Mechanism</h5>
-        <p class="mechanism-text">Central vein sign (CVS) indicates acute venous inflammation while paramagnetic rim lesions (PRL) reflect chronic active inflammation—dual biomarkers revealing MS requires targeting both acute vascular and chronic inflammatory pathways, not just one. Patient autonomy through at-home administration isn't merely convenient but may improve therapeutic outcomes through enhanced treatment adherence and reduced healthcare system friction, representing a psychosocial mechanism of efficacy.</p>
-        
-        <h5 class="section-title">Why Novel</h5>
-        <p class="mechanism-text">While CVS and PRL biomarkers exist independently, using them together to predict therapy response (anti-CD20 versus S1P modulators) represents unexplored territory. The ofatumumab combined with pelvic floor physical therapy combination is completely uncharted despite 80% of MS patients experiencing bladder dysfunction. No studies examine whether imaging biomarkers can predict treatment response—this represents the most immediate breakthrough opportunity.</p>
-        
-        <h5 class="section-title">Actionable Next Steps</h5>
-        <p class="mechanism-text">Retrospective analysis of existing MS imaging databases correlating baseline CVS/PRL patterns with treatment responses to anti-CD20 versus S1P modulators—immediately actionable. Request PRL quantification analysis from existing Novartis siponimod real-world cohorts. Prospective 50-patient pilot study using CVS/PRL status to guide ofatumumab versus siponimod selection, measuring 6-month EDSS and relapse outcomes.</p>
-        
-        <h5 class="section-title">Evaluation Scores</h5>
-        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 7/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 6/10</p>
-    </div>
-</div>
                 <!-- Finding 2: Parkinson's Week 2 -->
                 <div class="finding-item">
                     <div class="finding-header">
@@ -257,15 +194,20 @@
                     
                     <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
                     
-                    <div class="finding-expand" style="display: none;">
-    <p><strong>Novel Mechanism:</strong> HIV-1 hijacks normal amyloid processing machinery, revealing amyloidogenesis as a potentially infectious-like process even in non-HIV patients. This suggests viral-like propagation mechanisms may operate in sporadic Alzheimer's. SRN-901 demonstrates that NAD+ depletion, cellular senescence, and mitochondrial dysfunction are interconnected—single-pathway interventions fail because aging pathways have redundant backup systems requiring simultaneous multi-target approaches.</p>
-    
-    <p><strong>Why Novel:</strong> The HIV-Alzheimer's pathway convergence represents a genuinely new connection. While HIV-associated neurocognitive decline is known, the specific mechanism showing HIV-1 drives amyloidogenesis through identical pathways as sporadic Alzheimer's is unexplored. The gallbladder-brain axis linking bile metabolism dysfunction to neurodegeneration is completely novel territory. All proposed drug combinations show zero prior research.</p>
-    
-    <p><strong>Actionable Next Steps:</strong> Retrospective cohort study analyzing Alzheimer's incidence in HIV-positive patients on integrase inhibitor-based ART versus matched HIV-negative controls using insurance databases—feasible within 6 months. Measurement of plasma cholecystokinin (CCK) levels in early Alzheimer's patients versus age-matched controls. Phase I safety study of crocin supplementation before lecanemab therapy, monitoring for reduced amyloid-related imaging abnormalities (ARIA) incidence.</p>
-    
-    <p><strong>Evaluation Scores:</strong> Novelty: 8/10 | Plausibility: 7/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 6/10</p>
-</div>
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">The cGAS-STING-glymphatic-gut triad represents a revolutionary model where: (1) gut inflammation sends systemic signals, (2) α-synuclein aggregates activate cGAS-STING pathways, (3) impaired glymphatic clearance allows accumulation of inflammatory mediators and protein aggregates, creating a self-perpetuating cycle of neurodegeneration.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While individual components (cGAS-STING in neurodegeneration, glymphatic dysfunction, gut-brain axis) have been studied separately, this specific three-way mechanistic connection has never been proposed. The drug combinations (hydroxychloroquine + suvorexant, metformin + rifaximin) have zero prior research in PD.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Phase I safety study of hydroxychloroquine + suvorexant combination in early PD patients (6-12 months), measuring CSF α-synuclein levels, peripheral STING signaling, and gut inflammatory markers. All drugs are FDA-approved with known safety profiles.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 9/10 | Impact: 7/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
 
                 <!-- Finding 3: Alzheimer's -->
                 <div class="finding-item">
@@ -282,15 +224,19 @@
                     
                     <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
                     
-                    <div class="finding-expand" style="display: none;">
-    <p><strong>Novel Mechanism:</strong> Central vein sign (CVS) indicates acute venous inflammation while paramagnetic rim lesions (PRL) reflect chronic active inflammation—dual biomarkers revealing MS requires targeting both acute vascular and chronic inflammatory pathways, not just one. Patient autonomy through at-home administration isn't merely convenient but may improve therapeutic outcomes through enhanced treatment adherence and reduced healthcare system friction, representing a psychosocial mechanism of efficacy.</p>
-    
-    <p><strong>Why Novel:</strong> While CVS and PRL biomarkers exist independently, using them together to predict therapy response (anti-CD20 versus S1P modulators) represents unexplored territory. The ofatumumab combined with pelvic floor physical therapy combination is completely uncharted despite 80% of MS patients experiencing bladder dysfunction. No studies examine whether imaging biomarkers can predict treatment response—this represents the most immediate breakthrough opportunity.</p>
-    
-    <p><strong>Actionable Next Steps:</strong> Retrospective analysis of existing MS imaging databases correlating baseline CVS/PRL patterns with treatment responses to anti-CD20 versus S1P modulators—immediately actionable. Request PRL quantification analysis from existing Novartis siponimod real-world cohorts. Prospective 50-patient pilot study using CVS/PRL status to guide ofatumumab versus siponimod selection, measuring 6-month EDSS and relapse outcomes.</p>
-    
-    <p><strong>Evaluation Scores:</strong> Novelty: 8/10 | Plausibility: 7/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 6/10</p>
-</div>
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">ACSL4 activation leads to lipid peroxidation and membrane damage, which impairs Megalin receptor function. This reduces ApoE-mediated amyloid clearance, creating accumulation. The specific amino acid binding sites for Megalin-ApoE interactions are newly identified and could be pharmacologically targeted.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While ferroptosis and Megalin dysfunction have been studied separately in AD, no research connects ACSL4-mediated ferroptosis to receptor-mediated clearance mechanisms. The specific pathway: ACSL4 → lipid peroxidation → membrane damage → impaired Megalin → reduced ApoE clearance → amyloid accumulation has never been proposed.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Test deferasirox (FDA-approved iron chelator) in presymptomatic AD patients identified by plasma biomarkers. Measure both ferroptosis markers (4-HNE, GPX4) and amyloid clearance (CSF levels, PET imaging). Cell culture validation of ACSL4 inhibition effects on Megalin receptor function.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 9/10 | Evidence: 6/10</p>
+                    </div>
                 </div>
 
                 <!-- Finding 4: Rhinovirus Week 2 -->
@@ -465,14 +411,13 @@
     </footer>
 
     <script>
-    function toggleExpand(btn) {
-    event.preventDefault();
-    const expandSection = btn.nextElementSibling;
-    expandSection.classList.toggle('show');
-    btn.textContent = expandSection.classList.contains('show')
-        ? '← Collapse'
-        : 'Read Full Analysis →';
-}
-</script>
+        function toggleExpand(btn) {
+            const expandSection = btn.nextElementSibling;
+            expandSection.classList.toggle('show');
+            btn.textContent = expandSection.classList.contains('show') 
+                ? '← Collapse' 
+                : 'Read Full Analysis →';
+        }
+    </script>
 </body>
 </html>
