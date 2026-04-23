@@ -324,12 +324,12 @@ body {
 
 .disclaimer-box {
     background-color: #FFF9E6;
-    border: 1px solid var(--light-grey);
+    border: 2px solid var(--accent-red);
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     max-width: 900px;
     margin: 0 auto;
+}
 }
 
 .disclaimer-box h4 {
