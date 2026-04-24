@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXYGB7865G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DXYGB7865G');
+    </script>
+    <title>Findings Archive | Ouki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .findings-page {
+            padding: 4rem 0;
+            background-color: var(--cream);
+        }
+        
+        .findings-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .findings-header h2 {
+            font-size: 2.5rem;
+            color: var(--deep-indigo);
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .findings-header p {
+            color: var(--warm-grey);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .filters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            background-color: var(--light-grey);
+            color: var(--warm-grey);
+            border: 2px solid transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--sage-green);
+            color: var(--cream);
+        }
+        
+        .findings-list {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .finding-item {
+            background-color: white;
+            border-left: 4px solid var(--sage-green);
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .finding-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .finding-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+        
+        .finding-expand {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--light-grey);
+            display: none;
+        }
+        
+        .finding-expand.show {
+            display: block;
+        }
+        
+        .expand-btn {
+            background-color: var(--sage-green);
+            color: var(--cream);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .expand-btn:hover {
+            background-color: var(--soft-teal);
+        }
+        
+        .section-title {
+            color: var(--deep-indigo);
+            font-weight: 400;
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        .mechanism-text {
+            color: var(--warm-grey);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Ouki</h1>
+                <span class="subtitle">大喜 · Great Joy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="findings.html" class="active">Findings</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="findings-page">
+        <div class="container">
+            <div class="findings-header">
+                <h2>Findings Archive</h2>
+                <p>19 potential breakthroughs identified through AI-powered literature analysis. All findings require validation by qualified researchers. Showcasing top-scoring findings (38-41/50).</p>
+            </div>
+
+            <div class="findings-list">
+                
+                <!-- Finding 1: Rhinovirus/Statins - HIGHEST SCORE -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Common Cold (Rhinovirus)</span>
+                        <span class="score">41/50</span>
+                    </div>
+                    <h4>Statin-Mediated Antiviral Pathway via 27-Hydroxycholesterol</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Statins (Atorvastatin, Simvastatin)</span>
+                        <span class="finding-date">April 10, 2026</span>
+                    </div>
+                    <p class="finding-summary">Novel connection between cholesterol-lowering drugs and rhinovirus treatment through 27-hydroxycholesterol (27OHC) pathway. Statins affect cholesterol metabolism, producing 27OHC which has documented antiviral properties against rhinovirus—yet no studies have connected these for cold treatment.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Statins reduce cholesterol biosynthesis, altering the production of oxysterols including 27-hydroxycholesterol. 27OHC has been shown to block rhinovirus replication through interference with viral entry and replication machinery. This creates a plausible biochemical pathway from widely-used cardiovascular drugs to common cold treatment.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">PubMed search reveals: (1) 27OHC blocks rhinovirus (documented), (2) statins affect 27OHC levels (documented), but (3) ZERO papers connect statins to rhinovirus treatment via this pathway. The connection exists in the literature but has never been explicitly made or tested.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Randomized controlled trial: statin users vs. non-users tracking cold frequency/duration. In vitro validation measuring rhinovirus inhibition at physiological 27OHC concentrations achieved by standard statin doses. Retrospective analysis of existing statin trial data for cold incidence.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 9/10 | Plausibility: 8/10 | Actionability: 9/10 | Impact: 8/10 | Evidence: 7/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 2: Parkinson's Week 2 -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Parkinson's Disease</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>Novel 3-Way Inflammatory Cycle Targeting</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Hydroxychloroquine + Suvorexant</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Proposes targeting the cGAS-STING-glymphatic-gut axis, a self-amplifying inflammatory triad where gut-derived signals and misfolded α-synuclein trigger cyclic inflammation. Combines STING pathway inhibition with enhanced glymphatic clearance during sleep.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">The cGAS-STING-glymphatic-gut triad represents a revolutionary model where: (1) gut inflammation sends systemic signals, (2) α-synuclein aggregates activate cGAS-STING pathways, (3) impaired glymphatic clearance allows accumulation of inflammatory mediators and protein aggregates, creating a self-perpetuating cycle of neurodegeneration.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While individual components (cGAS-STING in neurodegeneration, glymphatic dysfunction, gut-brain axis) have been studied separately, this specific three-way mechanistic connection has never been proposed. The drug combinations (hydroxychloroquine + suvorexant, metformin + rifaximin) have zero prior research in PD.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Phase I safety study of hydroxychloroquine + suvorexant combination in early PD patients (6-12 months), measuring CSF α-synuclein levels, peripheral STING signaling, and gut inflammatory markers. All drugs are FDA-approved with known safety profiles.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 9/10 | Impact: 7/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 3: Alzheimer's -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Alzheimer's Disease</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>ACSL4-Megalin Axis: Ferroptosis-Receptor Dysfunction Link</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Iron Chelators (Deferasirox) + Megalin Modulators</span>
+                        <span class="finding-date">April 10, 2026</span>
+                    </div>
+                    <p class="finding-summary">First demonstration of connection between iron-dependent cell death (ferroptosis) and receptor-mediated amyloid clearance. ACSL4-driven lipid peroxidation damages Megalin receptors, impairing ApoE clearance and creating a vicious cycle of amyloid accumulation.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">ACSL4 activation leads to lipid peroxidation and membrane damage, which impairs Megalin receptor function. This reduces ApoE-mediated amyloid clearance, creating accumulation. The specific amino acid binding sites for Megalin-ApoE interactions are newly identified and could be pharmacologically targeted.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While ferroptosis and Megalin dysfunction have been studied separately in AD, no research connects ACSL4-mediated ferroptosis to receptor-mediated clearance mechanisms. The specific pathway: ACSL4 → lipid peroxidation → membrane damage → impaired Megalin → reduced ApoE clearance → amyloid accumulation has never been proposed.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Test deferasirox (FDA-approved iron chelator) in presymptomatic AD patients identified by plasma biomarkers. Measure both ferroptosis markers (4-HNE, GPX4) and amyloid clearance (CSF levels, PET imaging). Cell culture validation of ACSL4 inhibition effects on Megalin receptor function.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 9/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 4: Rhinovirus Week 2 -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Common Cold (Rhinovirus)</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>Microbiome-Guided Statin + OM-85 Combination Therapy</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Atorvastatin + Intranasal OM-85</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Combines host-targeting antiviral approach (27OHC via statins) with localized immune training (intranasal bacterial lysate), stratified by nasal microbiome risk profiles. Represents convergence of novel mechanism, solved technical barrier (RV-C production), and immediately actionable repurposing.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Dual-pathway targeting: atorvastatin modulates cholesterol metabolism to increase 27-hydroxycholesterol (direct antiviral), while intranasal OM-85 bacterial lysate primes local nasal immunity. Microbiome signatures predict treatment response, allowing personalized prophylaxis for high-risk individuals.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">Zero research exists combining 27OHC pathway modulation with bacterial lysate immune training. Microbiome-guided dosing for antivirals is completely unexplored. Intranasal delivery of OM-85 (rather than oral) for respiratory protection represents route-specific breakthrough.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Screen children for nasal microbiome risk profiles, randomize high-risk individuals to atorvastatin + intranasal OM-85 vs. placebo. Follow for full cold season measuring laboratory-confirmed rhinovirus infections. Measure 27OHC levels and immune markers to validate mechanism.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 9/10 | Impact: 7/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 5: Multiple Sclerosis -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Multiple Sclerosis</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>Low-Intensity Focused Ultrasound for Remyelination</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">LIFU Neuromodulation</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Non-invasive therapeutic ultrasound demonstrates ability to actively promote remyelination in MS lesions through neuromodulation, offering potential disease-modifying treatment beyond symptom management.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Low-intensity focused ultrasound (LIFU) provides precise neuromodulation that can stimulate oligodendrocyte precursor cells and promote myelin repair in MS-damaged neural tissue. Unlike current treatments that primarily manage inflammation, LIFU directly addresses the underlying demyelination.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While LIFU is being explored for various neurological applications, its specific use for MS remyelination represents an emerging application. The technique is non-invasive, precisely targetable, and addresses root cause rather than just symptoms.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Small pilot study (20-30 patients) with MRI-guided LIFU treatment targeting specific MS lesions, measuring remyelination via specialized MRI sequences over 6-12 months. Technology is FDA-approved for other applications, reducing regulatory barriers.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 7/10 | Plausibility: 8/10 | Actionability: 8/10 | Impact: 8/10 | Evidence: 7/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 6: Chronic Pain -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Chronic Pain</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>Sodium Channel Modulation Across Pain Syndromes</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Ranolazine (Nav1.7 Inhibition)</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">Identifies sodium channel dysfunction as common pathway across multiple chronic pain conditions. Proposes repurposing ranolazine (FDA-approved for angina) to target neuropathic pain, COPD-related musculoskeletal pain, and post-seizure chronic pain through Nav1.7/1.8 channel blockade.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Ranolazine's late sodium channel (Nav1.5) inhibition for cardiac use extends to neuronal Nav1.7/1.8 channels involved in pain signal transmission. Cross-condition analysis reveals sodium channel hyperexcitability as unifying mechanism in epilepsy-related injuries, chronic low back pain, and COPD musculoskeletal pain.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While ranolazine is established for cardiac use, zero research exists on its application to neuropathic pain despite shared sodium channel mechanisms. The seizure-injury-pain cascade via HMGB1/TLR4 pathway is newly identified. Cross-condition sodium channel insight represents novel therapeutic synthesis.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Phase II trial of ranolazine 1000mg BID in post-seizure neuropathic pain patients, measuring Neuropathic Pain Symptom Inventory scores at 8 weeks. Combination study of ranolazine + water-based rehabilitation in COPD patients with chronic pain, measuring 6-minute walk test distance and VAS pain scores.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 7/10 | Plausibility: 9/10 | Actionability: 8/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 7: Diabetes -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Diabetes</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>SGLT2i + Faster Insulin Aspart Pediatric Combination</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Empagliflozin + Faster Insulin Aspart</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">First proposal to combine SGLT2 inhibitor's glucosuria effect with faster insulin's rapid post-prandial correction in pediatric Type 1 diabetes. Exploits complementary glucose-lowering mechanisms with different temporal profiles to prevent cardiovascular-kidney-metabolic syndrome in youth.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">SGLT2 inhibitors provide continuous glucose reduction through urinary excretion while faster insulin aspart targets post-prandial spikes with accelerated pharmacokinetics. The aldosterone-SGLT2i synergy for diabetic aldosteronism represents additional unexplored therapeutic angle through dual metabolic-hormonal targeting.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">Zero studies exist combining empagliflozin/dapagliflozin with faster insulin aspart in pediatric populations. The specific application to preventing cardiovascular-kidney-metabolic syndrome in youth represents paradigm shift from reactive to preventive pediatric diabetes management. Aldosterone-glucose crosstalk newly identified.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Safety run-in study: 20 adolescents aged 16-17 with T1D receiving empagliflozin + faster insulin aspart for 12 weeks. Monitor HbA1c, time-in-range via CGM, dawn phenomenon reduction, and safety markers. If validated, expand to larger pediatric efficacy trial with cardiovascular-kidney endpoints.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 8: HIV -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">HIV/AIDS</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>GDF-15/Mitochondrial Stress Axis in HIV Reservoir Maintenance</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Metformin + GDF-15 Antagonists</span>
+                        <span class="finding-date">April 13, 2026</span>
+                    </div>
+                    <p class="finding-summary">First demonstration that mitochondrial stress biomarker GDF-15 correlates with HIV reservoir persistence independent of inflammation. Proposes targeting cellular metabolism through mitochondrial modulation as novel HIV cure strategy beyond traditional antivirals and immune activation.</p>
+                    
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+                    
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">GDF-15 (Growth Differentiation Factor-15) is released during mitochondrial stress and correlates with HIV reservoir markers independently of traditional inflammation pathways. This reveals reservoir cells exist in metabolically distinct states maintained by mitochondrial dysfunction rather than just immune activation, opening entirely new therapeutic avenue.</p>
+                        
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While GDF-15 is known in aging research and mitochondrial dysfunction recognized in HIV, linking them as an independent reservoir maintenance mechanism separate from inflammation is genuinely new. No research exists on GDF-15 antagonists for HIV reservoir reduction or combining metformin's mitochondrial effects with ART for this purpose.</p>
+                        
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Pilot study: HIV patients on stable ART receive metformin, measure GDF-15 levels and HIV reservoir markers before/after treatment. Humanized mouse studies testing GDF-15 neutralizing antibodies on reservoir burden. Validate GDF-15/reservoir correlation in independent patient cohorts.</p>
+                        
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 7/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 9: Influenza -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Influenza</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>Metformin-Mediated mTOR Suppression as Influenza Immunomodulator</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Metformin + Oseltamivir</span>
+                        <span class="finding-date">April 19, 2026</span>
+                    </div>
+                    <p class="finding-summary">Metformin's AMPK activation suppresses mTORC1, reducing the cytokine storm response responsible for severe influenza mortality. Combining metformin with standard antiviral oseltamivir targets both viral replication and the host immune overreaction simultaneously — a dual-mechanism approach with zero prior investigation.</p>
+
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Severe influenza mortality is driven largely by cytokine storm rather than viral load alone. Metformin activates AMPK which suppresses mTORC1 signalling — a key regulator of pro-inflammatory cytokine production including IL-6 and TNF-α. This creates an immunomodulatory brake on the overactive immune response without compromising viral clearance.</p>
+
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While metformin's anti-inflammatory properties are documented in diabetes research, and mTOR's role in cytokine storm is established, zero research proposes metformin as an influenza immunomodulator. The combination with oseltamivir — targeting virus and immune response simultaneously — has never been tested or proposed.</p>
+
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">Retrospective analysis of influenza outcomes in diabetic patients already on metformin vs. those on other glucose-lowering agents. Prospective pilot: hospitalised influenza patients randomised to oseltamivir alone vs. oseltamivir + metformin, measuring cytokine levels, duration of fever, and ICU admission rates.</p>
+
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 9/10 | Actionability: 8/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 10: Herpes Simplex -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Herpes Simplex Virus</span>
+                        <span class="score">38/50</span>
+                    </div>
+                    <h4>Pritelivir + HDAC Inhibitor Combination for Latent HSV Reservoir Elimination</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Pritelivir + Vorinostat (HDAC Inhibitor)</span>
+                        <span class="finding-date">April 19, 2026</span>
+                    </div>
+                    <p class="finding-summary">HSV establishes lifelong latency in dorsal root ganglia through epigenetic silencing. HDAC inhibitors force latent virus into active replication, making it vulnerable to helicase-primase inhibitor pritelivir — a "kick and kill" strategy that could eliminate the HSV reservoir entirely rather than just suppressing outbreaks.</p>
+
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">HSV latency is maintained by histone deacetylation silencing viral lytic genes. HDAC inhibitors like vorinostat reverse this epigenetic suppression, forcing latent HSV to reactivate. Pritelivir — a helicase-primase inhibitor superior to nucleoside analogues — then targets the reactivated virus at a different mechanistic point than acyclovir, reducing resistance risk.</p>
+
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">The "kick and kill" concept exists in HIV research but has never been systematically applied to HSV. Pritelivir is a newer agent not yet combined with latency-reversing agents in any published research. The specific combination of vorinostat-forced reactivation followed by pritelivir elimination of reactivating virus represents a completely unexplored therapeutic strategy.</p>
+
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">In vitro: test vorinostat-induced HSV reactivation in latently infected neuronal cell models, measure viral emergence, then assess pritelivir suppression of reactivated virus. Mouse model: establish HSV-1 latency, treat with vorinostat + pritelivir, measure ganglionic viral DNA reduction vs. acyclovir monotherapy.</p>
+
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 9/10 | Plausibility: 8/10 | Actionability: 7/10 | Impact: 8/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Finding 11: Cancer -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Cancer</span>
+                        <span class="score">39/50</span>
+                    </div>
+                    <h4>Fenbendazole-Induced Microtubule Disruption as Multi-Cancer Sensitiser</h4>
+                    <div class="finding-meta">
+                        <span class="finding-drugs">Fenbendazole + Checkpoint Inhibitors</span>
+                        <span class="finding-date">April 19, 2026</span>
+                    </div>
+                    <p class="finding-summary">Fenbendazole, an FDA-approved antiparasitic, disrupts tubulin polymerisation in cancer cells through the same mechanism as established chemotherapy agents — but with a dramatically superior safety profile. Cross-condition analysis reveals synergy with PD-1/PD-L1 checkpoint inhibitors, potentially sensitising resistant tumours to immunotherapy.</p>
+
+                    <button class="expand-btn" onclick="toggleExpand(this)">Read Full Analysis →</button>
+
+                    <div class="finding-expand">
+                        <h5 class="section-title">Novel Mechanism</h5>
+                        <p class="mechanism-text">Fenbendazole binds β-tubulin and disrupts microtubule dynamics, inducing mitotic arrest and apoptosis in rapidly dividing cancer cells. Unlike taxanes and vinca alkaloids used in chemotherapy, fenbendazole additionally disrupts glucose uptake by downregulating GLUT transporters and hexokinase — targeting the Warburg effect that cancer cells depend on for energy.</p>
+
+                        <h5 class="section-title">Why Novel</h5>
+                        <p class="mechanism-text">While fenbendazole's anticancer properties have emerged in case reports and limited cell studies, no research investigates its combination with checkpoint inhibitors. The dual mechanism — microtubule disruption plus glycolysis inhibition — combined with immunotherapy represents a completely unexplored triple-pathway attack. The drug's safety profile and cost make it immediately actionable.</p>
+
+                        <h5 class="section-title">Actionable Next Steps</h5>
+                        <p class="mechanism-text">In vitro: assess fenbendazole + pembrolizumab synergy in PD-L1 expressing cancer cell lines. Measure apoptosis rates, immune cell activation markers, and glucose uptake. Phase I dose-finding study in patients with advanced solid tumours who have progressed on standard checkpoint inhibitor monotherapy, using fenbendazole as an adjunct.</p>
+
+                        <h5 class="section-title">Evaluation Scores</h5>
+                        <p class="mechanism-text">Novelty: 8/10 | Plausibility: 8/10 | Actionability: 8/10 | Impact: 9/10 | Evidence: 6/10</p>
+                    </div>
+                </div>
+
+                <!-- Additional Findings -->
+                <div class="finding-item">
+                    <div class="finding-header">
+                        <span class="condition-tag">Additional Findings</span>
+                        <span class="score">—</span>
+                    </div>
+                    <h4>8 Further Breakthroughs</h4>
+                    <p class="finding-summary" style="font-style: italic;">Additional findings across all 10 conditions available in full archive. Each includes detailed mechanism analysis, novelty assessment, actionability scores, and validation requirements. New breakthroughs added weekly as system continues analysis.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ouki Research Platform. All findings require external validation.</p>
+            <p class="footer-note">Ouki (大喜) - "Great Joy" in Japanese</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleExpand(btn) {
+            const expandSection = btn.nextElementSibling;
+            expandSection.classList.toggle('show');
+            btn.textContent = expandSection.classList.contains('show') 
+                ? '← Collapse' 
+                : 'Read Full Analysis →';
+        }
+    </script>
+</body>
+</html>
