@@ -475,19 +475,26 @@
     <script>
         // Findings 1-21 are free (pass true), 22+ require login (pass false)
         function toggleExpand(btn, isFree) {
-            if (!isFree && !window.isLoggedIn) {
-                // Show gate banner instead
-                const expandSection = btn.nextElementSibling;
-                expandSection.classList.remove('show');
-                const existing = btn.parentNode.querySelector('.gate-banner');
-                if (!existing) {
-                    const banner = document.createElement('div');
-                    banner.className = 'gate-banner';
-                    banner.innerHTML = '<p>Full analysis is available to registered researchers.</p><a href="register.html">Create Free Account →</a>';
-                    btn.parentNode.insertBefore(banner, btn.nextSibling);
-                }
-                return;
-            }
+    if (!isFree && !window.isLoggedIn) {
+        const existing = btn.parentNode.querySelector('.gate-banner');
+        if (existing) {
+            existing.remove();
+            btn.textContent = 'Read Full Analysis →';
+        } else {
+            const banner = document.createElement('div');
+            banner.className = 'gate-banner';
+            banner.innerHTML = '<p>Full analysis is available to registered researchers.</p><a href="register.html">Create Free Account →</a>';
+            btn.parentNode.insertBefore(banner, btn.nextSibling);
+            btn.textContent = '← Hide';
+        }
+        return;
+    }
+    const expandSection = btn.nextElementSibling;
+    expandSection.classList.toggle('show');
+    btn.textContent = expandSection.classList.contains('show')
+        ? '← Collapse'
+        : 'Read Full Analysis →';
+}
             const expandSection = btn.nextElementSibling;
             expandSection.classList.toggle('show');
             btn.textContent = expandSection.classList.contains('show')
